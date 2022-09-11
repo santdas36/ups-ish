@@ -10,7 +10,7 @@ import { TabStackParams } from "../navigator/TabNavigator";
 import { RootStackParams } from "../navigator/RootNavigator";
 import { useTailwind } from "tailwind-rn/dist";
 import useOrders from "../hooks/useOrders";
-import { Button, ButtonGroup, Image } from "@rneui/themed";
+import { Button, ButtonGroup, Icon, Image } from "@rneui/themed";
 import OrderCard from "../components/OrderCard";
 
 export type OrderNavProp = CompositeNavigationProp<
@@ -43,11 +43,21 @@ const OrdersScreen = () => {
       <View>
         <Button
           color="#cb5a6c"
-          containerStyle={tw("p-5")}
+          containerStyle={tw("p-4")}
+          buttonStyle={tw(
+            "rounded-lg flex-row text-base justify-between px-4 py-4"
+          )}
+          style={tw("rounded-lg")}
           // style={tw("py-2 px-4 rounded-lg")}
           onPress={() => setAscending(!ascending)}
         >
           {ascending ? "Showing Oldest First" : "Showing Most Recent First"}
+          <Icon
+            size={18}
+            color="white"
+            name={ascending ? "sort-amount-down" : "sort-amount-up"}
+            type="font-awesome-5"
+          />
         </Button>
       </View>
       {orders

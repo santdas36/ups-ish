@@ -12,7 +12,7 @@ import {
   ApolloProvider,
   gql,
 } from "@apollo/client";
-console.log(process.env.STEPGEN_KEY);
+
 const client = new ApolloClient({
   uri: "https://velingrad.stepzen.net/api/calling-cricket/__graphql",
   headers: {
@@ -28,6 +28,11 @@ export default function App() {
     <TailwindProvider utilities={utilities}>
       <ApolloProvider client={client}>
         <NavigationContainer>
+          <StatusBar
+            style={"dark"}
+            backgroundColor="transparent"
+            translucent={true}
+          />
           <RootNavigator />
         </NavigationContainer>
       </ApolloProvider>

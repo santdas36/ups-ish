@@ -46,7 +46,12 @@ export default function CustomerScreen() {
         placeholder="Search by customer..."
         value={input}
         onChangeText={setInput}
-        containerStyle={tw("bg-white pt-4 pb-0 px-10")}
+        inputStyle={tw(
+          "px-4 py-3 bg-[#39a1ac] text-base text-white rounded-lg"
+        )}
+        placeholderTextColor="#fff"
+        inputContainerStyle={tw("border-b-cyan px-2 mt-4 -mb-2")}
+        containerStyle={tw("bg-cyan")}
       />
       {data?.getCustomers
         .filter((customer: CustomerList) =>

@@ -6,6 +6,7 @@ import { OrderNavProp } from "./OrdersScreen";
 import { RootStackParams } from "../navigator/RootNavigator";
 import DeliveryCard from "../components/DeliveryCard";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { StatusBar } from "expo-status-bar";
 
 type OrderScreenRouteProp = RouteProp<RootStackParams, "Order">;
 

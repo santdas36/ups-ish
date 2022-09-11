@@ -37,24 +37,10 @@
 			"marginLeft": 0
 		}
 	},
-	"-m-4": {
-		"style": {
-			"marginTop": -16,
-			"marginRight": -16,
-			"marginBottom": -16,
-			"marginLeft": -16
-		}
-	},
 	"mx-auto": {
 		"style": {
 			"marginLeft": "auto",
 			"marginRight": "auto"
-		}
-	},
-	"my-2": {
-		"style": {
-			"marginTop": 8,
-			"marginBottom": 8
 		}
 	},
 	"mb-4": {
@@ -82,6 +68,11 @@
 			"marginTop": 12
 		}
 	},
+	"ml-4": {
+		"style": {
+			"marginLeft": 16
+		}
+	},
 	"ml-1": {
 		"style": {
 			"marginLeft": 4
@@ -92,9 +83,9 @@
 			"marginTop": 40
 		}
 	},
-	"ml-4": {
+	"-mb-2": {
 		"style": {
-			"marginLeft": 16
+			"marginBottom": -8
 		}
 	},
 	"block": {
@@ -127,14 +118,42 @@
 			"height": 256
 		}
 	},
-	"h-full": {
-		"style": {
-			"height": "100%"
-		}
-	},
 	"w-full": {
 		"style": {
 			"width": "100%"
+		}
+	},
+	"max-w-[100px]": {
+		"style": {
+			"maxWidth": 100
+		}
+	},
+	"flex-[100px]": {
+		"style": {
+			"flexGrow": 1,
+			"flexShrink": 1,
+			"flexBasis": 100
+		}
+	},
+	"flex-[0.2]": {
+		"style": {
+			"flexGrow": 0.2,
+			"flexShrink": 1,
+			"flexBasis": 0
+		}
+	},
+	"flex-[0.3]": {
+		"style": {
+			"flexGrow": 0.3,
+			"flexShrink": 1,
+			"flexBasis": 0
+		}
+	},
+	"flex-[0.5]": {
+		"style": {
+			"flexGrow": 0.5,
+			"flexShrink": 1,
+			"flexBasis": 0
 		}
 	},
 	"flex-grow": {
@@ -160,6 +179,11 @@
 	"justify-between": {
 		"style": {
 			"justifyContent": "space-between"
+		}
+	},
+	"overflow-hidden": {
+		"style": {
+			"overflow": "hidden"
 		}
 	},
 	"rounded-lg": {
@@ -191,6 +215,11 @@
 			"borderBottomWidth": 1
 		}
 	},
+	"border-none": {
+		"style": {
+			"borderStyle": "none"
+		}
+	},
 	"border-[#ccc]": {
 		"style": {
 			"--tw-border-opacity": 1,
@@ -198,6 +227,18 @@
 			"borderRightColor": "rgb(204 204 204 / var(--tw-border-opacity))",
 			"borderBottomColor": "rgb(204 204 204 / var(--tw-border-opacity))",
 			"borderLeftColor": "rgb(204 204 204 / var(--tw-border-opacity))"
+		}
+	},
+	"border-b-cyan": {
+		"style": {
+			"--tw-border-opacity": 1,
+			"borderBottomColor": "rgb(89 193 204 / var(--tw-border-opacity))"
+		}
+	},
+	"bg-pink": {
+		"style": {
+			"--tw-bg-opacity": 1,
+			"backgroundColor": "rgb(235 106 124 / var(--tw-bg-opacity))"
 		}
 	},
 	"bg-cyan": {
@@ -212,10 +253,44 @@
 			"backgroundColor": "rgb(255 255 255 / var(--tw-bg-opacity))"
 		}
 	},
-	"bg-pink": {
+	"bg-cyan/30": {
+		"style": {
+			"backgroundColor": "rgb(89 193 204 / 0.3)"
+		}
+	},
+	"bg-[#59c1cc]": {
 		"style": {
 			"--tw-bg-opacity": 1,
-			"backgroundColor": "rgb(235 106 124 / var(--tw-bg-opacity))"
+			"backgroundColor": "rgb(89 193 204 / var(--tw-bg-opacity))"
+		}
+	},
+	"bg-[#29919c]": {
+		"style": {
+			"--tw-bg-opacity": 1,
+			"backgroundColor": "rgb(41 145 156 / var(--tw-bg-opacity))"
+		}
+	},
+	"bg-[#39a19c]": {
+		"style": {
+			"--tw-bg-opacity": 1,
+			"backgroundColor": "rgb(57 161 156 / var(--tw-bg-opacity))"
+		}
+	},
+	"bg-[#39a1bc]": {
+		"style": {
+			"--tw-bg-opacity": 1,
+			"backgroundColor": "rgb(57 161 188 / var(--tw-bg-opacity))"
+		}
+	},
+	"bg-[#39a1ac]": {
+		"style": {
+			"--tw-bg-opacity": 1,
+			"backgroundColor": "rgb(57 161 172 / var(--tw-bg-opacity))"
+		}
+	},
+	"bg-transparent": {
+		"style": {
+			"backgroundColor": "transparent"
 		}
 	},
 	"p-5": {
@@ -232,6 +307,30 @@
 			"paddingRight": 16,
 			"paddingBottom": 16,
 			"paddingLeft": 16
+		}
+	},
+	"p-2": {
+		"style": {
+			"paddingTop": 8,
+			"paddingRight": 8,
+			"paddingBottom": 8,
+			"paddingLeft": 8
+		}
+	},
+	"p-6": {
+		"style": {
+			"paddingTop": 24,
+			"paddingRight": 24,
+			"paddingBottom": 24,
+			"paddingLeft": 24
+		}
+	},
+	"p-0": {
+		"style": {
+			"paddingTop": 0,
+			"paddingRight": 0,
+			"paddingBottom": 0,
+			"paddingLeft": 0
 		}
 	},
 	"px-10": {
@@ -256,6 +355,36 @@
 		"style": {
 			"paddingLeft": 16,
 			"paddingRight": 16
+		}
+	},
+	"px-5": {
+		"style": {
+			"paddingLeft": 20,
+			"paddingRight": 20
+		}
+	},
+	"py-4": {
+		"style": {
+			"paddingTop": 16,
+			"paddingBottom": 16
+		}
+	},
+	"px-6": {
+		"style": {
+			"paddingLeft": 24,
+			"paddingRight": 24
+		}
+	},
+	"py-3": {
+		"style": {
+			"paddingTop": 12,
+			"paddingBottom": 12
+		}
+	},
+	"px-2": {
+		"style": {
+			"paddingLeft": 8,
+			"paddingRight": 8
 		}
 	},
 	"pt-4": {
